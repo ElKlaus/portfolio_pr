@@ -41,9 +41,11 @@ module.exports = {
         new OptimizeCssAssetsPlugin({
             cssProcessorOptions: { discardComments: {removeAll: true } }
         }),
+        /*
         new StyleLintPlugin({
-            configFile: './.stylelintrc'
-        }),
+                    configFile: './.stylelintrc'
+                }),
+        */      
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
@@ -79,7 +81,7 @@ module.exports = {
                 loader: "eslint-loader",
                 options: {
                     fix: true
-                }            
+                }
             },
             {
                 test: /\.(jpg|png|svg)$/,
@@ -87,7 +89,7 @@ module.exports = {
                 options: {
                     name: 'images/[name].[ext]'
                 }
-            }                                    
+            }
         ]
     }
 };
