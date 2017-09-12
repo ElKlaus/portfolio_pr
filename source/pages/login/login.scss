@@ -1,4 +1,4 @@
-header {
+.header {
     background-image:  url(./login_bg.jpg);
     display: flex;
     justify-content: center;
@@ -6,15 +6,27 @@ header {
     align-items: center;
 }
 
-.header__login_form {
+.header__auth_form {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
+    background: rgba(255,252,252,0.75);
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px 20px 30px 20px;
     h2 {
-
+        font-size: 35px;
+        text-transform: uppercase;
+        margin: 0;
     }
 }
 
-.header__login_form_inputs {
-    
+.header__auth_form_inputs {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border-radius: 0 4px 4px 0;
+        width: 93%;
+    }
 }

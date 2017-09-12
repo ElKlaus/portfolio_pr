@@ -2,10 +2,11 @@ extends ../base
 
 block head
     title login page
+    style(src="../../fonts/fonts.css")
 block content
-    header
-        .header__login_form
+    header.header
+        .header__auth_form
             h2 АВТОРИЗУЙТЕСЬ
-            .header__login_form_inputs
+            .header__auth_form_inputs
                 input(type="text" placeholder="Логин")
                 input(type="text" placeholder="Пароль")
