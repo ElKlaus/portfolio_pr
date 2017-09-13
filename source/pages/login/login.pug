@@ -4,8 +4,14 @@ block head
     title login page
 block content
     header.header
-        .header__auth_form
-            h2 АВТОРИЗУЙТЕСЬ
-            .header__auth_form_inputs
-                input(type="text" placeholder="Логин")
-                input(type="text" placeholder="Пароль")
+    section.auth_block
+        .auth-block__button
+            a(href="#") Авторизоваться
+        .auth-block__form
+            .auth-block__form_box
+                h2 АВТОРИЗУЙТЕСЬ
+                .auth-block__form_inputs
+                    input(type="text" placeholder="Логин")
+                    input(type="text" placeholder="Пароль")
+    footer.footer
+        p © Киров Сергей | создано с любовью в LoftSchool | 2017
