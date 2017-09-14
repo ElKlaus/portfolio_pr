@@ -18,19 +18,21 @@ body {
 
 .auth-block__button_position {
     margin-top: 24px;
+}
+
+.auth-block__button {
     display: flex;
     justify-content: flex-end;
 }
 
-.auth-block__button {
+.auth-block__button_link {
     a {
         font-family: 'robotoregular';
         color: #ffffff;
         text-decoration: none;
         border: 1px solid #fff;
         border-radius: 5px;
-        padding: 14px 27px 22px;
-        display: block;
+        padding: 14px 27px;
         transition: .25s ease;
         max-width: 10.4%;
         &:hover {
@@ -42,6 +44,7 @@ body {
             color: darken(#00bfa5, 10%);
         }
     }
+
 }
 
 //Форма авторизации
@@ -52,16 +55,20 @@ body {
     align-items: center;
 }
 
+.auth-block__form_wrap {
+    background: rgba(255,252,252,0.75);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
 .auth-block__form_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255,252,252,0.75);
     text-align: center;
-    border-radius: 5px;
     padding: 30px 20px 0px 20px;
-    overflow: hidden;
+    // 
 
     h2 {
         font-size: 35px;
@@ -215,12 +222,11 @@ body {
 
 .auth-block__escape_button {
     a {
-        width: 100%;
+        display: block;
         color: #fff;
         text-decoration: none;
         background-color: #08ac99;
         padding: 15px 52px;
-        display: block;
         transition: .25s ease;
         font-family: 'robotomedium';
         font-size: 16px;

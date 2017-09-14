@@ -5,26 +5,28 @@ block head
 block content
     header.header
     section.auth_block
-        .auth-block__button.auth-block__button_position
-            a(href="#") Авторизоваться
+        .auth-block__button
+            .auth-block__button_link.auth-block__button_position
+                a(href="#") Авторизоваться
         .auth-block__form
-            .auth-block__form_box
-                h2 АВТОРИЗУЙТЕСЬ
-                .auth-block__form_box_inputs
-                    .auth-block__form_box_inputs_log
-                        input(type="text" placeholder="Логин")
-                    .auth-block__form_box_inputs_key    
-                        input(type="text" placeholder="Пароль")
-                .auth-block__robocheck
-                    .auth-block__robocheck_iman
-                        input(type="checkbox" id="imancheck")
-                        label(for="imancheck") Я человек
-                    .auth-block__robocheck_ans.auth-block__robocheck_checked
-                        span Вы точно не робот?
-                        input(type="radio" id="yescheck")
-                        label(for="yescheck") Да
-                        input(type="radio"  id="nocheck")
-                        label(for="nocheck") Не уверен
+            .auth-block__form_wrap
+                .auth-block__form_box                
+                    h2 АВТОРИЗУЙТЕСЬ
+                    .auth-block__form_box_inputs
+                        .auth-block__form_box_inputs_log
+                            input(type="text" placeholder="Логин")
+                        .auth-block__form_box_inputs_key    
+                            input(type="text" placeholder="Пароль")
+                    .auth-block__robocheck
+                        .auth-block__robocheck_iman
+                            input(type="checkbox" id="imancheck")
+                            label(for="imancheck") Я человек
+                        .auth-block__robocheck_ans.auth-block__robocheck_checked
+                            span Вы точно не робот?
+                            input(type="radio" id="yescheck")
+                            label(for="yescheck") Да
+                            input(type="radio"  id="nocheck")
+                            label(for="nocheck") Не уверен
                 .auth-block__buttons
                     .auth-block__escape_button
                         a(href="#") На главную
