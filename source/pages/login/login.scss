@@ -8,7 +8,7 @@ body {
     background-size: cover;
     height: 100vh;
 }
-
+//Кнопка авторизации
 .auth_block {
     flex-basis: 100%;
     display: flex;
@@ -16,13 +16,15 @@ body {
     width: 71.5%;
 }
 
-.auth-block__button {
-    font-family: 'robotoregular';
-    text-align: center;
+.auth-block__button_position {
+    margin-top: 24px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 24px;
+}
+
+.auth-block__button {
     a {
+        font-family: 'robotoregular';
         color: #ffffff;
         text-decoration: none;
         border: 1px solid #fff;
@@ -30,6 +32,7 @@ body {
         padding: 14px 27px 22px;
         display: block;
         transition: .25s ease;
+        max-width: 10.4%;
         &:hover {
             background-color: #ffffff;
             color: #00bfa5;
@@ -41,10 +44,10 @@ body {
     }
 }
 
+//Форма авторизации
 .auth-block__form {
     flex-basis: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -57,7 +60,8 @@ body {
     background: rgba(255,252,252,0.75);
     text-align: center;
     border-radius: 5px;
-    padding: 30px 20px 30px 20px;
+    padding: 30px 20px 0px 20px;
+    overflow: hidden;
 
     h2 {
         font-size: 35px;
@@ -68,11 +72,11 @@ body {
         display: flex;
         align-items: center;
         letter-spacing: -0.4px;
+        margin-bottom: 40px;
 
         &::before {
             content: "";
             background: #c4cbcd;
-            display: block;
             margin-right: 20px; 
             width: 22px;
             height: 5px;
@@ -81,7 +85,6 @@ body {
         &::after {
             content: "";
             background: #c4cbcd;
-            display: block;
             margin-left: 20px; 
             width: 22px;
             height: 5px;
@@ -89,17 +92,146 @@ body {
     }
 }
 
-.auth-block__form_inputs {
+.auth-block__form_box_inputs {
     display: flex;
     flex-direction: column;
 
     input {
         border-radius: 0 4px 4px 0;
+        border: none;
         width: 93%;
         outline: 0;
-        box-shadow: none;
+        padding: 0 20px;
+        font-family: 'robotoregular';
+        font-size: 16px;
+        color: #373e42;
     }
 }
+
+.auth-block__form_box_inputs_log {
+    display: flex;
+    margin-bottom: 20px;
+    &::before {
+        content: "";
+        background: url(../../icons/login-man.png) no-repeat;
+        background-position: 50% 50%;
+        background-color: #f0efe9;
+        border-radius: 4px 0 0 4px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.auth-block__form_box_inputs_key {
+    display: flex;
+    margin-bottom: 20px;
+    &::before {
+        content: "";
+        background: url(../../icons/login-key.png) no-repeat;
+        background-position: 50% 50%;
+        background-color: #f0efe9;
+        border-radius: 4px 0 0 4px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.auth-block__robocheck {
+
+} 
+
+.auth-block__robocheck_iman {
+    margin-bottom: 14px;
+
+    label {
+        font-family: 'robotoregular';
+        font-size: 16px;
+        color: #455a64;
+        display: inline-flex;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="checkbox"] + label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #00bfa5;
+        margin-right: 10px;
+        border-radius: 2px;
+    }
+    input[type="checkbox"]:checked + label:before {
+        background: url('../../icons/checked_bg.png') no-repeat;
+        background-color: #00bfa5;
+        background-position: 50%;
+    }
+}
+
+.auth-block__robocheck_ans {
+    span {
+        font-family: 'robotobold';
+        font-size: 16px;
+        color: #455a64;
+        display: block;
+        margin-bottom: 11px;
+    }
+    label {
+        font-family: 'robotoregular';
+        font-size: 16px;
+        color: #455a64;
+        display: inline-flex;
+        color: #455a64;
+    }
+    input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="radio"] + label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+        border: 1px solid #cccdcd;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+}
+
+.auth-block__robocheck_checked {
+
+    input[type="radio"]:checked + label:before {
+        background: url('../../icons/checked_bg2.png') no-repeat;;
+        background-color: #ffffff;
+        background-position: 50%;
+    }
+}
+
+.auth-block__buttons {
+    display: flex; 
+}
+
+.auth-block__escape_button {
+    a {
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        background-color: #08ac99;
+        padding: 15px 52px;
+        display: block;
+        transition: .25s ease;
+        font-family: 'robotomedium';
+        font-size: 16px;
+
+        &:hover {
+            background-color: #068981;
+        }
+    }
+}
+
+
 
 .footer {
     font-family: 'robotolight';
