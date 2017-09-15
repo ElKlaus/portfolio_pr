@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>login page</title>
+  <link href="./css/common.css" rel="stylesheet"><link href="./css/login.css" rel="stylesheet"></head>
+  <body>
+    <header class="header"></header>
+    <section class="auth-block">
+      <div class="auth-block__button">
+        <div class="auth-block__button_link auth-block__button_position"><a href="#">Авторизоваться</a></div>
+      </div>
+      <div class="auth-block__form">
+        <div class="auth-block__form_wrap">
+          <div class="auth-block__form_box">               
+            <h2>АВТОРИЗУЙТЕСЬ</h2>
+            <div class="auth-block__form_box_inputs">
+              <div class="auth-block__form_box_inputs_log">
+                <input type="text" placeholder="Логин">
+              </div>
+              <div class="auth-block__form_box_inputs_key">   
+                <input type="text" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="auth-block__robocheck">
+              <div class="auth-block__robocheck_iman">
+                <input type="checkbox" id="imancheck">
+                <label for="imancheck">Я человек</label>
+              </div>
+              <div class="auth-block__robocheck_ans"><span>Вы точно не робот?</span>
+                <input type="radio" id="yescheck">
+                <label class="robocheck_checked" for="yescheck">Да</label>
+                <input type="radio" id="nocheck">
+                <label for="nocheck">Не уверен</label>
+              </div>
+            </div>
+          </div>
+          <div class="auth-block__buttons">
+            <div class="auth-block__escape_button"><a href="#">На главную</a></div>
+            <div class="auth-block__escape_button"><a href="#">Войти</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>© Киров Сергей | создано с любовью в LoftSchool | 2017</p>
+    </footer>
+  <script type="text/javascript" src="./js/common.js"></script><script type="text/javascript" src="./js/login.js"></script></body>
+</html>

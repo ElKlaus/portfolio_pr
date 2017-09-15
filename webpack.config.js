@@ -39,6 +39,11 @@ module.exports = {
             chunks: ['login', 'common'],
             template: PATHS.source + '/pages/login/login.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            chunks: ['about', 'common'],
+            template: PATHS.source + '/pages/about/about.pug'
+        }),
         new CleanWebpackPlugin('build'),
         new ExtractTextPlugin('./css/[name].css'),
         new webpack.optimize.CommonsChunkPlugin({

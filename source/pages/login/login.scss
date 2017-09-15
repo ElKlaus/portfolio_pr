@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 //Кнопка авторизации
-.auth_block {
+.auth-block {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
         border-radius: 5px;
         padding: 14px 27px;
         transition: .25s ease;
-        max-width: 10.4%;
+        display: block;
         &:hover {
             background-color: #ffffff;
             color: #00bfa5;
@@ -78,7 +78,6 @@ body {
         color: #455a64;
         display: flex;
         align-items: center;
-        letter-spacing: -0.4px;
         margin-bottom: 40px;
 
         &::before {
@@ -204,15 +203,18 @@ body {
         border: 1px solid #cccdcd;
         border-radius: 20px;
         margin-right: 10px;
-    }
-}
 
-.auth-block__robocheck_checked {
+
+    }
 
     input[type="radio"]:checked + label:before {
         background: url('../../icons/checked_bg2.png') no-repeat;;
         background-color: #ffffff;
         background-position: 50%;
+    }
+    
+    .robocheck_checked {
+        color: #00bfa5;
     }
 }
 
