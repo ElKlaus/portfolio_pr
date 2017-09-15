@@ -8,6 +8,7 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
 //Кнопка авторизации
 .auth-block {
     flex-basis: 100%;
@@ -56,29 +57,28 @@ body {
 }
 
 .auth-block__form_wrap {
+    display: inline-block;
     background: rgba(255,252,252,0.75);
     border-radius: 5px;
     overflow: hidden;
+    max-width: 385px;
 }
 
 .auth-block__form_box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 30px 20px 0px 20px;
-    // 
+    padding: 33px 19px 0;
+    margin-bottom: 33px;
 
     h2 {
         font-size: 35px;
         text-transform: uppercase;
-        margin: 0;
+        margin: 0 0 33px 0;
         font-family: 'bernier_regularregular';
         color: #455a64;
         display: flex;
         align-items: center;
-        margin-bottom: 40px;
 
         &::before {
             content: "";
@@ -101,6 +101,7 @@ body {
 .auth-block__form_box_inputs {
     display: flex;
     flex-direction: column;
+    width: 340px;
 
     input {
         border-radius: 0 4px 4px 0;
@@ -123,7 +124,7 @@ body {
         background-position: 50% 50%;
         background-color: #f0efe9;
         border-radius: 4px 0 0 4px;
-        width: 45px;
+        width: 58px;
         height: 45px;
     }
 }
@@ -137,13 +138,14 @@ body {
         background-position: 50% 50%;
         background-color: #f0efe9;
         border-radius: 4px 0 0 4px;
-        width: 45px;
+        width: 58px;
         height: 45px;
     }
 }
 
 .auth-block__robocheck {
-
+    text-align: center;
+    width: 100%;
 } 
 
 .auth-block__robocheck_iman {
@@ -175,7 +177,7 @@ body {
     }
 }
 
-.auth-block__robocheck_ans {
+.auth-block__robocheck_qws {
     span {
         font-family: 'robotobold';
         font-size: 16px;
@@ -183,6 +185,12 @@ body {
         display: block;
         margin-bottom: 11px;
     }
+}
+
+.auth-block__ans {
+    display: flex;
+    justify-content: space-between;
+
     label {
         font-family: 'robotoregular';
         font-size: 16px;
@@ -203,8 +211,6 @@ body {
         border: 1px solid #cccdcd;
         border-radius: 20px;
         margin-right: 10px;
-
-
     }
 
     input[type="radio"]:checked + label:before {
@@ -212,34 +218,48 @@ body {
         background-color: #ffffff;
         background-position: 50%;
     }
-    
-    .robocheck_checked {
-        color: #00bfa5;
-    }
 }
 
+.auth-block__ans_margin {
+    max-width: 58%;
+    margin: 0 auto;
+}
+
+.robocheck_checked {
+    color: #00bfa5;
+}
+
+//Кнопки "На главную" и "Выход"
 .auth-block__buttons {
     display: flex; 
 }
 
 .auth-block__escape_button {
+    background-color: rgba(8,176,157,0.7);
+    border: none;
+    padding: 0;
     a {
         display: block;
         color: #fff;
         text-decoration: none;
-        background-color: #08ac99;
-        padding: 15px 52px;
+        padding: 14px 25px;
         transition: .25s ease;
         font-family: 'robotomedium';
         font-size: 16px;
 
         &:hover {
-            background-color: #068981;
+            background-color: rgba(8,140,132,0.7);;
         }
+    }
+
+    & + .auth-block__escape_button {
+        border-left: 1px solid #74b9b7;
     }
 }
 
-
+.button_basis {
+    flex-basis: 50%;
+}
 
 .footer {
     font-family: 'robotolight';
