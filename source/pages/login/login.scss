@@ -58,7 +58,6 @@ body {
 
 .auth-block__form_wrap {
     display: inline-block;
-    background: rgba(255,252,252,0.75);
     border-radius: 5px;
     overflow: hidden;
     max-width: 385px;
@@ -68,8 +67,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 33px 19px 0;
-    margin-bottom: 33px;
+    padding: 33px 19px;
+    background: rgba(255,252,252,0.75);
 
     h2 {
         font-size: 35px;
@@ -248,12 +247,12 @@ body {
         font-size: 16px;
 
         &:hover {
-            background-color: rgba(8,140,132,0.7);;
+            background-color: rgba(57, 196, 188, 0.70);;
         }
     }
 
     & + .auth-block__escape_button {
-        border-left: 1px solid #74b9b7;
+        border-left: 2px solid #74b9b7;
     }
 }
 

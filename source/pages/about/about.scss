@@ -1,1 +1,8 @@
 @import url('../../fonts/fonts.css');
+
+.hero {
+    display: flex;
+    justify-content: column;
+    background-image:  url(./hero-sect_bg.jpg);
+    background-size: cover;
+}

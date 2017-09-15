@@ -18,6 +18,7 @@ module.exports = {
         'index': PATHS.source + '/pages/index/index.js',
         'blog': PATHS.source + '/pages/blog/blog.js',
         'login': PATHS.source + '/pages/login/login.js',
+        'about': PATHS.source + '/pages/about/about.js',
     },
     output: {
         path: PATHS.build,
