@@ -4,20 +4,22 @@ block head
     title about page
 block content
     section.section.hero
-        ul.socials.hero__socials            
-            each item in ['vk', 'tw', 'in']
-                li.socials__item
-                    a(href="#" class=`socials__item_${item}`).socials__link
-        .hero__menu.hamburger            
+        .hero__row
+            ul.socials.hero__socials
+                each item in ['vk', 'git', 'in']
+                    li.socials__item
+                        a(href="#" class=`socials__link_${item}`).socials__link
+            .hero__menu
+                .hero__menu-position.hamburger
         .hero__title
             .section-title
-                img.section-title__pic
+                embed(data="../../icons/about_header.svg", type="image/svg+xml").section-title__pic
             .user.hero__user
                 .user__pic
-                    img.user__avatar
+                    img(src="./hero_pic.jpg" alt="").user__avatar
                 .user__description
-                    .user__name Киров Сергей
-                    .user__info Личный сайт разработчика
+                    .user__name.user__name-margin Киров Сергей
+                    .user__info Личный сайт веб-разработчика
         .hero__scroll-btn
             button(type="button").arrow-down
     
