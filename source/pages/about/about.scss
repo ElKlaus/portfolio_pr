@@ -1,11 +1,18 @@
 @import url('../../fonts/fonts.css');
 
+body {
+    background-image:  url(./hero-sect_bg.jpg);
+    background-size: cover;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .hero {
     display: flex;
     flex-direction: column;
-    background-image:  url(./hero-sect_bg.jpg);
-    background-size: cover;
 }
 
 .hero__row {
@@ -94,7 +101,7 @@
 }
 
 .section-title__pic {
-    background: url(../../icons/portfolio_header.svg) no-repeat;
+    // background: url(./hero-pic.jpg) no-repeat;
 }
 
 .user {
@@ -147,4 +154,109 @@
 
 .arrow-up {
     transform: rotate(180deg);
+}
+
+
+//======Section bout========
+
+.about {
+    display: flex;
+}
+
+.about__left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.about__left-color {
+    background-color: #efeee9;
+}
+
+.about__triangle {
+    display: none;
+}
+
+.block_title {
+    text-transform: uppercase;
+    font-family: 'bernier_regularregular';
+    color: #373e42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        background: #c4cbcd;
+        margin-right: 20px; 
+        width: 22px;
+        height: 5px;
+    }
+     
+    &::after {
+        content: "";
+        background: #c4cbcd;
+        margin-left: 20px; 
+        width: 22px;
+        height: 5px;
+    }
+    
+}
+
+.block_title-main {
+    font-size: 63px;
+    margin-bottom: 41px;
+}
+
+.about__left--content {
+
+}
+
+.user-description {
+    padding: 0px 74px;
+}
+
+.user-description__image {
+    display: flex;
+    justify-content: center;
+}
+
+.description__image-margin {
+    margin-bottom: 39px;
+}
+
+.user-description__avatar {
+    display: block;
+    width: 442px;
+    height: 390px;
+    background: url(./about_bg.jpg) no-repeat;
+    background-position: center;
+
+}
+
+.user-description--title {
+    margin-bottom: 40px;
+}
+
+.block-subtitle {
+    font-size: 35px;
+}
+
+.user-description--text {
+}
+
+.user-description--text {
+    text-align: left;
+    font-family: 'robotoregular';
+    font-size: 16px;
+}
+
+.about__right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeebdf;
 }

@@ -69,32 +69,33 @@ body {
     align-items: center;
     padding: 33px 19px;
     background: rgba(255,252,252,0.75);
+}
 
-    h2 {
-        font-size: 35px;
-        text-transform: uppercase;
-        margin: 0 0 33px 0;
-        font-family: 'bernier_regularregular';
-        color: #455a64;
-        display: flex;
-        align-items: center;
+.block-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0 0 33px 0;
+    font-family: 'bernier_regularregular';
+    color: #455a64;
+    display: flex;
+    align-items: center;
 
-        &::before {
-            content: "";
-            background: #c4cbcd;
-            margin-right: 20px; 
-            width: 22px;
-            height: 5px;
-        }
-         
-        &::after {
-            content: "";
-            background: #c4cbcd;
-            margin-left: 20px; 
-            width: 22px;
-            height: 5px;
-        }
+    &::before {
+        content: "";
+        background: #c4cbcd;
+        margin-right: 20px; 
+        width: 22px;
+        height: 5px;
     }
+     
+    &::after {
+        content: "";
+        background: #c4cbcd;
+        margin-left: 20px; 
+        width: 22px;
+        height: 5px;
+    }
+    
 }
 
 .auth-block__form_box_inputs {
