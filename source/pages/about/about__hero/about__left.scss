@@ -1,17 +1,18 @@
 
 .about {
     display: flex;
-    padding: 5px 0;
+    padding: 6px 0;
 }
 
 .about__left {
     display: flex;
     justify-content: flex-end;
     background-color: #efeee9;
+    flex-basis: 50%;
 }
 
 .about__left--content {
-    flex-basis: 78%;
+    flex-basis: 72%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,11 +50,11 @@
 
 .block_title-main {
     font-size: 63px;
-    margin-bottom: 41px;
+    margin-bottom: 46px;
 }
 
 .user-description {
-    width: 65%;
+    width: 73%;
 }
 
 .user-description__image {
@@ -62,7 +63,7 @@
 }
 
 .description__image-margin {
-    margin-bottom: 39px;
+    margin-bottom: 34px;
 }
 
 .user-description__avatar {
@@ -75,7 +76,7 @@
 }
 
 .user-description--title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #455a64;
 }
 
@@ -96,7 +97,7 @@
 
 }
 
-.user-description--text {
+.text-content {
     text-align: left;
     font-family: 'robotoregular';
     font-size: 16px;
