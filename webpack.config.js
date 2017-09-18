@@ -76,7 +76,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
-                    publicPath: '../',
+                    publicPath: '../../',
                     use: ['css-loader','sass-loader'],
                 })
             },
