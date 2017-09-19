@@ -57,17 +57,16 @@
 }
 
 .socials__item {
-
 }
 
 .socials__link {
-    border: 1px solid #fff;
 }
 
 .socials__item_vk {
     background:  url(../../../icons/vk.svg) no-repeat;
     background-size: 72%;
     background-position: 50%;
+    border: 1px solid #fff;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -77,6 +76,7 @@
     background:  url(../../../icons/github.svg) no-repeat;
     background-size: 61%;
     background-position: 50%;
+    border: 1px solid #fff;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -86,6 +86,7 @@
     background:  url(../../../icons/in.svg) no-repeat;
     background-size: 50%;
     background-position: 50%;
+    border: 1px solid #fff;
     width: 34px;
     height: 34px;
     border-radius: 50%;
