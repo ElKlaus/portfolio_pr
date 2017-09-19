@@ -2,10 +2,11 @@
 
 body {
     background-image:  url(./hero/hero-sect_bg.jpg);
-    background-size: cover;
+    background-size: 100% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .section {
@@ -14,13 +15,15 @@ body {
 }
 
 
-
-
-
 //======Section Hero========
 @import url('./hero/hero.scss');
-
 
 //======Section About========
 @import url('./about__hero/about__left.scss');
 @import url('./about__hero/about__right.scss');
+
+//======Section Map========
+@import url('./map/map.scss');
+
+//======Footer========
+@import url('./footer/footer.scss');

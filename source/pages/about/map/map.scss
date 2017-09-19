@@ -1,0 +1,90 @@
+.map {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.google-map, .google-map img  {
+    width: 100%;
+    background-image: url(./map.jpg);
+    height: 143vh;
+    background-size: 100% auto;
+}
+.map-img {
+    width: 100%;
+}
+
+.map__data {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    padding: 34px 40px 10px 40px;
+    background-color: rgba(255,255,255, .85);
+    border-radius: 5px;
+    width: 18%;
+}
+
+.contacts__title {
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+
+.block-subtitle {
+    color: #373e42;
+}
+
+.contats__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts__item {
+    display: flex;
+    position: relative;    
+    align-items: center;
+}
+
+.contact-row {
+    margin-bottom: 26px;
+}
+
+.contact-row_icon {
+    background-size: cover;
+    position: absolute;
+}
+
+.contact-row_icon_skype {
+    background: url(../../../icons/skype.svg) no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.contact-row_icon_mail {
+    background: url(../../../icons/envelope.svg) no-repeat;
+    height: 17px;
+    width: 23px;
+}
+.contact-row_icon_phone {
+    background: url(../../../icons/phone.svg) no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.contact-row_icon_address {
+    background: url(../../../icons/map_marker.svg) no-repeat;
+    height: 24px;
+    width: 24px;    
+}
+
+.contact-row_content {
+    font-family: 'robotomedium';
+    flex-shrink: 16px;
+    color: #455a64;
+    margin-left: 34px;
+}

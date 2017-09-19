@@ -1,7 +1,7 @@
 
 .about {
     display: flex;
-    padding: 7px 0;
+    padding: 7px 0 0 0;
 }
 
 .about__left {
@@ -95,7 +95,7 @@
 }
 
 .user-description--text {
-
+    margin-bottom: 41px;
 }
 
 .text-content {
@@ -103,6 +103,3 @@
     font-family: 'robotoregular';
     font-size: 16px;
 }
-
-
-

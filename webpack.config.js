@@ -46,6 +46,9 @@ module.exports = {
             template: PATHS.source + '/pages/about/about.pug'
         }),
         new CleanWebpackPlugin('build'),
+        new OptimizeCssAssetsPlugin({
+            cssProcessorOptions: { discardComments: {removeAll: true } }
+        }),
         new ExtractTextPlugin('./css/[name].css'),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common'
@@ -76,7 +79,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
-                    publicPath: '../../',
+                    publicPath: '../',
                     use: ['css-loader','sass-loader'],
                 })
             },

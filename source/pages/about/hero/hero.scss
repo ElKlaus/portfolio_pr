@@ -37,7 +37,12 @@
 .socials__link {
     display: block;
     opacity: .5;
+
+    &:hover {
+        opacity: 1;
+    }
 }
+
 .socials__link_vk {
     background:  url(../../../icons/vk.svg) no-repeat;
     height: 17px;
@@ -81,10 +86,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .section-title {
     max-width: 300px;
+    position: absolute;
 }
 
 .section-title__pic {
@@ -92,6 +99,25 @@
 }
 
 .user {
+
+}
+
+.hero__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.user__pic {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.user__avatar {
 
 }
 
