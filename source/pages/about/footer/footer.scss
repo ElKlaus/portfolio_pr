@@ -5,7 +5,7 @@
     width: 100%;
     flex-direction: column;
     background-color: rgba(55,62,66,.85);
-    padding: 30px 0px 0px 0px;
+    padding: 28px 0px 0px 0px;
 }
 
 .footer__row {
@@ -14,12 +14,17 @@
     padding: 0px 32px;
 }
 
+.footer__row:nth-child(1) {
+    margin-bottom: 5px;
+    border-bottom: 3px solid rgba(102, 108, 110, 0.10);
+}
+
 .footer__col-left {
     flex-basis: 50%
 }
 
 .footer__menu {
-    width: 50%;   
+    width: 50%;
 }
 
 .menu {
@@ -43,17 +48,88 @@
     color: #fff;
 }
 
+.footer__socials {
+    width: 21%;
+}
+
+.socials_roundet {
+
+}
+
+.socials__item {
+
+}
+
+.socials__link {
+    border: 1px solid #fff;
+}
+
+.socials__item_vk {
+    background:  url(../../../icons/vk.svg) no-repeat;
+    background-size: 72%;
+    background-position: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.socials__item_git {
+    background:  url(../../../icons/github.svg) no-repeat;
+    background-size: 61%;
+    background-position: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.socials__item_in {
+    background:  url(../../../icons/in.svg) no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.socials__item_vk:hover {
+    background:  url(../../../icons/vk_round.svg) no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+
+.socials__item_git:hover {
+    background:  url(../../../icons/github_round.svg) no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+
+.socials__item_in:hover {
+    background:  url(../../../icons/in_round.svg) no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+
 .footer__col-right {
-    flex-basis: 50%
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .footer__text {
     font-family: 'robotolight';
     font-size: 16px;
+    line-height: 1.4;
     color: #fff;    
-    width: 62%;
+    width: 71%;
+    opacity: 0.5;
 }
 
 .footer__copyright {
-
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.5;
 }

@@ -13,13 +13,13 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 140px;
     align-items: center;
-    margin: 0
+    margin: 0;
 }
 
 .hero__socials {
     margin-top: 30px;
+    width: 140px;
 
     .socials__link {
         opacity: 0.5;
