@@ -19,6 +19,7 @@ module.exports = {
         'blog': PATHS.source + '/pages/blog/blog.js',
         'login': PATHS.source + '/pages/login/login.js',
         'about': PATHS.source + '/pages/about/about.js',
+        'works': PATHS.source + '/pages/works/works.js',
     },
     output: {
         path: PATHS.build,
@@ -45,6 +46,11 @@ module.exports = {
             chunks: ['about', 'common'],
             template: PATHS.source + '/pages/about/about.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'works.html',
+            chunks: ['works', 'common'],
+            template: PATHS.source + '/pages/works/works.pug'
+        }),
         new CleanWebpackPlugin('build'),
         new OptimizeCssAssetsPlugin({
             cssProcessorOptions: { discardComments: {removeAll: true } }
@@ -52,9 +58,6 @@ module.exports = {
         new ExtractTextPlugin('./css/[name].css'),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common'
-        }),
-        new OptimizeCssAssetsPlugin({
-            cssProcessorOptions: { discardComments: {removeAll: true } }
         }),
         /*
         new StyleLintPlugin({

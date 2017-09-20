@@ -1,0 +1,53 @@
+extends ../base
+
+block head
+    title works page
+block content
+
+    include ./../about/hero/hero
+
+    section.section.review
+        .review__title
+            .block_title Что обо мне говорят
+        .review__block
+            .reveiw__content
+                .review__text.text-content
+                | Этот парень проходил обучение 
+                |веб-разработке не где-то, а в LoftSchool! 
+                |2 месяца только самых тяжелых испытаний и
+                | бессонных ночей!
+                .review__autor
+                    .review__autor_pic
+                    .review__autor_info
+                        .review__autor-name Ковальчук Дмитрий
+                        .review__autor-status основатель Loftschool
+            .review__content
+                .review__text.text-content
+                | Этот код выдержит любые испытания.
+                | Только пожалуйста, не загружается сайт
+                |  на слишком старых браузерах!
+                .review__autor
+                    .review__autor_pic
+                    .review__autor_info
+                        .review__autor-name Сабанцев Владимир
+                        .review__autor-status преподаватель
+
+    section.section.feedback
+        .feedback__block
+            .feedback__title Связаться со мной
+            .feedback__inputs
+                input(type="text" placeholder="Имя")
+                input(type="text" placeholder="Email")
+                input(type="text" placeholder="Ваше сообщение")
+            .feedback__buttons
+
+        .feedback__scroll-btn
+            button(type="button").arrow-down
+
+    include ./../about/footer/footer
+
+
+
+
+        
+

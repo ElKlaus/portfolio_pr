@@ -1,0 +1,19 @@
+@import url('../../fonts/fonts.css');
+@import url('../about/about.scss');
+@import url('./review/review.scss');
+
+
+.arrow-down {
+    display: none;
+}
+
+.feedback__scroll-btn {
+    .arrow-down {
+        display: block;
+        transform: rotate(180deg);
+    }
+}
+
+.footer {
+    display: none;
+}
