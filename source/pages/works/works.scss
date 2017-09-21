@@ -1,6 +1,7 @@
 @import url('../../fonts/fonts.css');
 @import url('../about/about.scss');
 @import url('./review/review.scss');
+@import url('./feedback/feedback.scss');
 
 
 .arrow-down {
@@ -15,5 +16,5 @@
 }
 
 .footer {
-    display: none;
+    // display: none;
 }

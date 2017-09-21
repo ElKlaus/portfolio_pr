@@ -49,6 +49,9 @@
 .review__content {
     position: relative;
     max-width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .review__content::before {

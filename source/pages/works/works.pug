@@ -25,7 +25,7 @@ block content
             .review__content
                 .review__text.text-content
                     | Этот код выдержит любые испытания.
-                    | Только пожалуйста, не загружается сайт
+                    | Только пожалуйста, не загружаейте сайт
                     |  на слишком старых браузерах!
                 .review__autor
                     .review__autor-pic.review__pic-2
@@ -33,22 +33,22 @@ block content
                         .review__autor-name Сабанцев Владимир
                         .review__autor-status преподаватель
 
-    section.section.feedback
-        .feedback__block
-            .feedback__title Связаться со мной
-            .feedback__inputs
-                input(type="text" placeholder="Имя")
-                input(type="text" placeholder="Email")
-                input(type="text" placeholder="Ваше сообщение")
-            .feedback__buttons
+        .feedback
+            .feedback__wrapper.feedback_margin
+                .feedback__block
+                    .feedback_blur
+                    .feedback__title.block_title Связаться со мной
+                    .feedback__inputs
+                        input(type="text" placeholder="Имя").feedback__input.feedback__input-name
+                        input(type="text" placeholder="Email").feedback__input.feedback__input-email
+                        input(type="text" placeholder="Ваше сообщение").feedback__input.feedback__input-mess
+                .feedback__buttons.buttons
+                    button.button__item.button_basis
+                        a(href="#").button__link На главную
+                    button.button__item.button_basis
+                        a(href="#").button__link Войти
 
         .feedback__scroll-btn
             button(type="button").arrow-down
 
     include ./../about/footer/footer
-
-
-
-
-        
-

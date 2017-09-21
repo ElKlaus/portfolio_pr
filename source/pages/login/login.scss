@@ -230,15 +230,15 @@ body {
 }
 
 //Кнопки "На главную" и "Выход"
-.auth-block__buttons {
+.buttons {
     display: flex; 
 }
 
-.auth-block__escape_button {
+.button__item {
     background-color: rgba(8,176,157,0.7);
     border: none;
     padding: 0;
-    a {
+    .button__link {
         display: block;
         color: #fff;
         text-decoration: none;
@@ -252,7 +252,7 @@ body {
         }
     }
 
-    & + .auth-block__escape_button {
+    & + .button__item {
         border-left: 2px solid #74b9b7;
     }
 }
