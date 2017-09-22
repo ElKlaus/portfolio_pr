@@ -2,6 +2,7 @@
 
 body {
     background-image:  url(./hero/hero-sect_bg.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -9,13 +10,6 @@ body {
     align-items: center;
     position: relative;
 }
-
-.section {
-    // max-width: 1200px;
-    // margin: 0 auto;
-}
-
-
 
 @import url('./hero/hero.scss');
 
