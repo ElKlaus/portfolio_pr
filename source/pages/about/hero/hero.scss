@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 25px 0 31px;
+    padding: 25px 31px 0;
 }
 
 .hero__row {
@@ -16,10 +16,6 @@
     align-items: center;
     margin: 0;
     padding: 0;
-}
-
-.hero__socials {
-
 }
 
 .socials__link {
@@ -86,6 +82,7 @@
 
 .section-title {
     background: url(./../../../icons/portfolio_header.svg) no-repeat;
+    background-size: contain;
     background-position: center;
     opacity: .1;
     width: 100%;
@@ -93,14 +90,6 @@
     position: absolute;
     top: 84px;
     left: 13px;
-}
-
-.section-title__pic {
-    // background: url(./hero-pic.jpg) no-repeat;
-}
-
-.user {
-
 }
 
 .hero__user {
@@ -116,10 +105,6 @@
     border-radius: 50%;
     margin-bottom: 28px;
     overflow: hidden;
-}
-
-.user__avatar {
-
 }
 
 .user__description {
@@ -142,12 +127,10 @@
     opacity: .7;
 }
 
-
-
 .hero__scroll-btn {
     display: flex;
     justify-content: center;
-    padding: 134px 0 70px;
+    padding: 134px 0 63px;
 }
 
 .arrow-down {

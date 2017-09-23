@@ -1,8 +1,10 @@
 
 .about {
     display: flex;
-    padding: 7px 0 0 0;    
+    justify-content: center;
+    padding: 7px 0 0 0;
     width: 100%;
+    position: relative;
 }
 
 .about__left {
@@ -12,15 +14,28 @@
     width: 50%;
 }
 
+.triangle {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: -150px;
+    z-index: -30;
+}
+
+svg {
+    width: 50%;
+    height: 158px;
+    display: flex;
+}
+
+
+
+
 .about__left--content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 39px;
-}
-
-.about__triangle {
-    display: none;
 }
 
 .block_title {

@@ -6,9 +6,12 @@ block content
     include ./hero/hero
             
     section.section.about
+        .triangle.about__triangle
+            svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_left
+                polygon(fill="#efeee9" points="0,100 -7,0 100,100")
+            svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_right
+                polygon(fill="#eeebdf" points="0,100 100,9   100,100")
         .about__left
-            .about__triangle.about__triangle_left
-                svg.triangle.triangle_fill_white
             .about__left--content
                 .about__left--title
                     .block_title.block_title-main Обо мне            
@@ -21,8 +24,6 @@ block content
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vel? Asperiores voluptatibus veritatis consequuntur assumenda maxime placeat magni corrupti, tenetur corporis quae iure quos consequatur perspiciatis nesciunt architecto quasi deleniti.
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, Lorem  Quam illo impedit adipisci!c vel? Asperiores voluptatibus veritatis consequuntur assumenda maxime placeat magni corrupti, tenetur corporis quae iure quos consequatur perspiciatis nesciunt architecto quasi deleniti.
         .about__right
-            .about__triangle.about__triangle_right
-                svg.triangle.triangle_fill_beige
             .about__right--content
                 .about__right-title
                     .block-subtitle.block_title Чем я могу быть вам полезен

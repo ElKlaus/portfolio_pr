@@ -4,13 +4,17 @@
     }
 }
 
-
 .slider {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 27px 0 0 0;
     background-color: #faf8f0;
+    position: relative;
+}
+
+.slider__triangle {
+    top: -157px;
 }
 
 .slider__title {
@@ -18,7 +22,6 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    // width: 30%;
 }
 
 .slider__title_margin {
