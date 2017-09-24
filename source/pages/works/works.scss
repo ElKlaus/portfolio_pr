@@ -4,43 +4,6 @@
 @import url('./review/review.scss');
 @import url('./feedback/feedback.scss');
 
-
-///=========sleder media queries==========
-@mixin tablets() {
-    @media screen and (max-width: 760px) {
-        @content;
-    }
-}
-
-.slider__block {
-    @include tablets() {
-        flex-wrap: nowrap;
-    }
-}
-
-.slider__block {
-    @include tablets() {
-        flex-wrap: nowrap;
-    }
-}
-
-.slider__display {
-    @include tablets () {
-        order: -10;
-    }
-}
-
-.slider__info, .slider__display, .slider__btns {
-    @include tablets () {
-        width: 100%;
-    }
-}
-///=========sleder media queries==========
-
-
-.feedback__scroll-btn {
-    .arrow-down {
-        display: block;
-        transform: rotate(180deg);
-    }
+.section {
+    max-width: 100%;
 }

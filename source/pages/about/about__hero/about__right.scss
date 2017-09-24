@@ -63,7 +63,8 @@
     margin: 0 37px 25px 0;
 }
 
-.skills-row__itm + .skills-row__itm {
+.skills-row__itm:last-child {    
+    margin-right: 0;
 }
 
 .skill {
