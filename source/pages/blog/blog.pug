@@ -2,6 +2,19 @@ extends ../base
 block head
     title blog page
 block content
+    .total-menu
+        .total__hamburger
+        .total__list
+            -
+                var pages = [
+                    'мои работы',
+                    'блог',
+                    'обо мне',
+                    'авторизация'
+                ]
+            each item in pages
+                li.total__item
+                    a.total__link #{item}
 
     section.section.hero
         .hero__row
