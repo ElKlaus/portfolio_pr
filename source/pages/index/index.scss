@@ -1,4 +1,223 @@
-h1{
-    color: #1637B8;
+@import url('../../fonts/fonts.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:  url(./login_bg.jpg);
+    background-size: cover;
+    height: 100vh;
 }
-  
+
+//Кнопка авторизации
+.auth-block {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 71.5%;
+}
+
+.auth-block__button_position {
+    margin-top: 24px;
+}
+
+.auth-block__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-block__button_link {
+    a {
+        font-family: 'robotoregular';
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 14px 27px;
+        transition: .25s ease;
+        display: block;
+        &:hover {
+            background-color: #ffffff;
+            color: #00bfa5;
+        }
+        &:active {
+            background-color:rgba(255,252,252,0.75);
+            color: darken(#00bfa5, 10%);
+        }
+    }
+
+}
+
+// Стили из формы авторизации
+.auth-block__form {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-block__form_wrap {
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 385px;
+}
+
+.auth-block__form_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 19px;
+    background: rgba(255,252,252,0.75);
+}
+
+.block-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0 0 33px 0;
+    font-family: 'bernier_regularregular';
+    color: #455a64;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        background: #c4cbcd;
+        margin-right: 20px; 
+        width: 22px;
+        height: 5px;
+    }
+     
+    &::after {
+        content: "";
+        background: #c4cbcd;
+        margin-left: 20px; 
+        width: 22px;
+        height: 5px;
+    }
+    
+}
+// Стили из формы авторизации
+
+//Стили из секции hero страницы about
+
+.hero__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__pic {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user__description {
+    text-align: center;
+    color: #455a64;
+}
+
+.user__name {
+    font-family: 'robotomedium';
+    font-size: 28px;
+    
+    &-margin {
+        margin-bottom: 0;
+    }
+}
+
+.user__info {
+    font-family: 'robotoregular';
+    font-size: 16px;
+    opacity: .8;
+    color: #455a64;
+}
+
+.socials {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.socials__link {
+    opacity: 0.5;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.socials__item + .socials__item  {
+    margin-left: 28px;
+}
+
+.socials__link {
+    display: block;
+    opacity: .5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.socials__link_vk {
+    background:  url(./vk_grn.png) no-repeat;
+    height: 17px;
+    width: 30px;
+}
+
+.socials__link_git {
+    background:  url(./git_grn.png) no-repeat;
+    height: 22px;
+    width: 26px;
+}
+
+.socials__link_in {
+    background:  url(./ln_grn.png) no-repeat;
+    height: 22px;
+    width: 24px;
+}
+
+//Стили из секции hero страницы about
+
+
+//Кнопки "На главную" и "Выход"
+.buttons {
+    display: flex; 
+}
+
+.button__item {
+    background-color: rgba(8,176,157,0.7);
+    border: none;
+    padding: 0;
+    .button__link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 14px 25px;
+        transition: .25s ease;
+        font-family: 'robotomedium';
+        font-size: 16px;
+
+        &:hover {
+            background-color: rgba(57, 196, 188, 0.70);;
+        }
+    }
+
+    & + .button__item {
+        border-left: 2px solid #74b9b7;
+    }
+}
+
+.button_basis {
+    flex-basis: 50%;
+}
+
+.footer {
+    font-family: 'robotolight';
+    font-size: em(16px);
+}

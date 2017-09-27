@@ -3,6 +3,35 @@ extends ../base
 block head
     title index page
 block content
-    h1 ТЕСТИРУЕМ LIVERELOAD123
-    img(src=require("./webpack.svg") width="100")
+    section.section.welcome
+        
+block content
+    section.section.auth-block.welcome
+        .auth-block__button
+            .auth-block__button_link.auth-block__button_position
+                a(href="#") Авторизоваться
+        .auth-block__form
+            .auth-block__form_wrap
+                .auth-block__form_box
+                    .user.hero__user
+                        .user__pic
+                            img(src="./images/hero-pic.jpg", alt="").user__avatar
+                        .user__description
+                            .user__name.user__name-margin Киров Сергей
+                            .user__info Личный сайт веб-разработчика
 
+                        ul.socials.hero__socials
+                            each item in ['vk', 'git', 'in']
+                                li.socials__item
+                                    a(href="#" class=`socials__link_${item}`).socials__link
+
+                .auth-block__buttons.buttons
+                    button.button__item.button_basis
+                        a(href="#").button__link Мои работы
+                    button.button__item.button_basis
+                        a(href="#").button__link Обо мне
+                    button.button__item.button_basis
+                        a(href="#").button__link Блог
+
+    footer.footer
+        p © Киров Сергей | создано с любовью в LoftSchool | 2017
