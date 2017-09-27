@@ -1,0 +1,12 @@
+.total-menu.total-menu-hidden
+    .total__list
+        -
+            var pages = [
+                'мои работы',
+                'блог',
+                'обо мне',
+                'авторизация'
+            ]
+        each item in pages
+            li.total__item.total__item-margin
+                a(href="#").total__link #{item}
