@@ -67,8 +67,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 33px 19px;
     background: rgba(255,252,252,0.75);
+}
+
+.welcome__form_box {
+    padding: 37px 71px 40px;
 }
 
 .block-title {
@@ -100,7 +103,6 @@ body {
 // Стили из формы авторизации
 
 //Стили из секции hero страницы about
-
 .hero__user {
     display: flex;
     flex-direction: column;
@@ -114,9 +116,17 @@ body {
     overflow: hidden;
 }
 
+.welcome__pic {
+    margin-bottom: 16px;
+}
+
 .user__description {
     text-align: center;
     color: #455a64;
+}
+
+.welcome__description {
+    margin-bottom: 35px;
 }
 
 .user__name {
@@ -126,6 +136,10 @@ body {
     &-margin {
         margin-bottom: 0;
     }
+}
+
+.welcome__name {
+    margin-bottom: 8px;
 }
 
 .user__info {
@@ -184,8 +198,7 @@ body {
 
 //Стили из секции hero страницы about
 
-
-//Кнопки "На главную" и "Выход"
+//Кнопки 
 .buttons {
     display: flex; 
 }
@@ -198,7 +211,6 @@ body {
         display: block;
         color: #fff;
         text-decoration: none;
-        padding: 14px 25px;
         transition: .25s ease;
         font-family: 'robotomedium';
         font-size: 16px;
@@ -213,8 +225,8 @@ body {
     }
 }
 
-.button_basis {
-    flex-basis: 50%;
+.button__link-padding {
+    padding: 14px 31px;
 }
 
 .footer {
