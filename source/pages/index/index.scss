@@ -45,7 +45,6 @@ body {
             color: darken(#00bfa5, 10%);
         }
     }
-
 }
 
 // Стили из формы авторизации
@@ -67,11 +66,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(255,252,252,0.75);
 }
 
 .welcome__form_box {
-    padding: 37px 71px 40px;
+    padding: 37px 0 40px;
+    background: rgba(255,252,252,0.85);
 }
 
 .block-title {
@@ -231,5 +230,56 @@ body {
 
 .footer {
     font-family: 'robotolight';
-    font-size: em(16px);
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+//много совпадений со странице login
+@media screen and (max-width: 760px) {
+    .auth-block {
+        width: 98%;
+    }
+
+    .button__link-padding {
+        padding: 14px 20px;
+    }
+
+    .user__name {
+        font-size: 26px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .auth-block__button_link {
+        font-size: 14px;
+        a {
+            padding: 11px 19px;
+        }
+    }
+
+    .auth-block__button_position {
+        margin-top: 10px;
+    }
+    
+    .auth-block {
+        align-items: center;
+    }
+
+    .user__name {
+        font-size: 21px;
+    }
+
+    .button__link-padding {
+        padding: 14px 16px;
+    }
+    
+    .button__item .button__link {
+        font-size: 14px;
+    }
 }

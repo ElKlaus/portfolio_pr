@@ -263,5 +263,48 @@ body {
 
 .footer {
     font-family: 'robotolight';
-    font-size: em(16px);
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .button__link-padding {
+        padding: 14px 25px;
+    }
+
+    .user__name {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .auth-block__button_link {
+        font-size: 14px;
+        a {
+            padding: 11px 19px;
+        }
+    }
+
+    .auth-block__button_position {
+        margin-top: 10px;
+    }
+    
+    .auth-block {
+        align-items: center;
+    }
+
+    .user__name {
+        font-size: 21px;
+    }
+
+    .button__item .button__link {
+        font-size: 14px;
+    }
 }
