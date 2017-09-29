@@ -14,7 +14,7 @@ body {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    width: 71.5%;
+    // width: 71.5%;
 }
 
 .auth-block__button_position {
@@ -192,10 +192,10 @@ body {
     justify-content: space-between;
 
     label {
+        display: flex;
+        align-items: center;
         font-family: 'robotoregular';
         font-size: 16px;
-        color: #455a64;
-        display: inline-flex;
         color: #455a64;
     }
     input[type="radio"] {
@@ -270,8 +270,32 @@ body {
 
 @media screen and (max-width: 760px) {
 
-    .footer {
+    .auth-block__form_box {
+        padding: 33px 19px 39px;
+    }
+
+    .block-title {
+        font-size: 30px;
+    }
+
+    .auth-block__form_box_inputs {
+        width: 310px;
+    }
+
+    .inputs_margin {
+        margin-bottom: 5px;
+    }
+
+    .auth-block__robocheck_qws span {
+        margin-bottom: 8px;
+    }
+
+    .auth-block__form_box_inputs input {
         font-size: 14px;
+    }
+
+    .auth-block__ans_margin {
+        max-width: 64%;
     }
 
     .button__link-padding {
@@ -281,10 +305,19 @@ body {
     .user__name {
         font-size: 26px;
     }
+    .footer {
+        font-size: 14px;
+    }
+
+
 }
 
 
 @media screen and (max-width: 320px) {
+    .auth-block__form_box_inputs {
+        width: 260px;
+    }
+
     .auth-block__button_link {
         font-size: 14px;
         a {
