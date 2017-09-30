@@ -151,3 +151,80 @@
 .arrow-up {
     transform: rotate(180deg);
 }
+
+@media screen and (max-width: 760px) {
+    .hero {
+        padding: 25px 16px 0 25px;
+    }
+
+    .socials__item_hero + .socials__item_hero {
+        margin-left: 28px;
+    }
+
+    .hero__user {
+        padding-top: 56px;
+    }
+
+    .hero__scroll-btn {
+        padding: 98px 0 39px;
+    }
+}
+    
+@media screen and (max-width: 320px) {
+
+    .hero {        
+        padding: 10px 9px 0 10px;
+    }
+
+    .socials {
+        padding: 3px 0;
+    }
+
+    .socials__link_vk {
+        background-size: contain;
+        height: 16px;
+        width: 26px;
+    }
+
+    .socials__link_git {
+        background-size: contain;
+        height: 22px;
+        width: 23px;
+    }
+
+    .socials__link_in {
+        background-size: contain;
+        height: 19px;
+        width: 23px;
+    }
+
+    .socials__item_hero + .socials__item_hero {
+        margin-left: 28px;
+    }
+
+    .hamburger {
+        background-size: contain;
+        height: 22px;
+        width: 26px;
+    }
+
+    .hero__user {
+        padding-top: 78px;
+    }
+
+    .user__name {
+        font-size: 21px;
+    }
+
+    .user__name-margin {
+        margin-bottom: 10px;
+    }
+
+    .user__info {
+        font-size: 14px;
+    }
+
+    .hero__scroll-btn {
+        padding: 155px 0 42px;
+    }
+}

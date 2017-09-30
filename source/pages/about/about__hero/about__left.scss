@@ -118,3 +118,31 @@ svg {
     font-family: 'robotoregular';
     font-size: 16px;
 }
+
+@media screen and (max-width: 760px) {
+    
+    .section-title {
+        display: none;
+    }    
+    .about__triangle {
+        top: -59px;
+    }
+
+    .about__triangle svg {
+        height: 67px;
+    }
+}
+    
+@media screen and (max-width: 320px) {
+
+    .about__triangle {
+        top: -22px;
+        svg {
+            height: 30px;
+        }
+    }
+
+    .about__triangle svg {
+        height: 30px;
+    }
+}
