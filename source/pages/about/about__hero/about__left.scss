@@ -28,8 +28,9 @@ svg {
     display: flex;
 }
 
-
-
+.poligon_right {
+    fill: #eeebdf;
+}
 
 .about__left--content {
     display: flex;
@@ -37,6 +38,21 @@ svg {
     align-items: center;
     padding-left: 39px;
 }
+
+.about__left--title {
+    position: relative;
+}
+
+.about__left_bg {
+    background: url(./title_about.png) no-repeat;
+    background-size: contain;
+    width: 357px;
+    height: 133px;
+    position: absolute;
+    top: -40px;
+    left: -81px;
+}
+
 
 .block_title {
     text-transform: uppercase;
@@ -67,6 +83,22 @@ svg {
 .block_title-main {
     font-size: 63px;
     margin-bottom: 46px;
+}
+
+.block_title::before {
+    content: "";
+    background: #c4cbcd;
+    margin-right: 20px; 
+    width: 22px;
+    height: 5px;
+}
+
+.block_title::after {
+    content: "";
+    background: #c4cbcd;
+    margin-left: 20px;
+    width: 22px;
+    height: 5px;
 }
 
 .user-description {
@@ -120,16 +152,73 @@ svg {
 }
 
 @media screen and (max-width: 760px) {
-    
+    .about {
+        flex-wrap: wrap;
+    }
+
     .section-title {
         display: none;
-    }    
+    }
     .about__triangle {
         top: -59px;
     }
 
     .about__triangle svg {
         height: 67px;
+    }
+
+    .poligon_right {
+        fill: #efeee9;
+    }
+    
+    .about__right {
+        width: auto;
+    }
+
+    .about__left {
+        width: auto;
+    }
+
+    .about__left--content {
+        padding: 43px 0 0 0;
+    }
+
+    .user-description {
+        width: 63%;
+    }
+
+    .about__left_bg {
+        width: 283px;
+        height: 89px;
+        top: -19px;
+        left: -4px;
+    }
+
+    .block_title-main {
+        font-size: 49px;
+        margin-bottom: 39px;
+    }
+
+    .user-description__avatar {
+        width: 473px;
+        height: 416px;
+        background-size: cover;
+    }
+
+    .description__image-margin {
+        margin-bottom: 43px;
+    }
+
+    .block-subtitle {
+        font-size: 30px;
+    }
+
+    .user-description--title {
+        margin-bottom: 0px;
+    }
+
+    .user-description--text {
+        font-size: 14px;
     }
 }
     

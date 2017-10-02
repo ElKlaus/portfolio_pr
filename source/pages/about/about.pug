@@ -8,13 +8,14 @@ block content
     section.section.about
         .triangle.about__triangle
             svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_left
-                polygon(fill="#efeee9" points="0,100 -7,0 100,100")
+                polygon(fill="#efeee9" points="0,100 -7,0 100,100").poligon_left
             svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_right
-                polygon(fill="#eeebdf" points="0,100 100,9   100,100")
+                polygon(points="0,100 100,9   100,100").poligon_right
         .about__left
             .about__left--content
                 .about__left--title
-                    .block_title.block_title-main Обо мне            
+                    .about__left_bg
+                    .block_title.block_title-main Обо мне
                 .user-description
                     .user-description__image.description__image-margin
                         .user-description__avatar
