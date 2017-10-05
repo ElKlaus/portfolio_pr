@@ -135,6 +135,18 @@
 @media screen and (max-width: 320px) {
 
     .about__right--content {
+        width: 95%;
     }
 
+    .about__right-title {
+        width: 86%;
+    }
+
+    .skills-row__itm {
+        margin: 0 0 31px 2px;
+    }
+
+    .skills-list__item-margin {
+        margin-bottom: -5px;
+    }
 }

@@ -118,5 +118,17 @@
 }
 
 @media screen and (max-width: 320px) {
-    
+    .contacts {
+        padding: 27px 33px 10px;
+        width: 100%;
+    }
+
+    .map {
+        justify-content: start;
+    }
+
+    .google-map {
+        height: 111vh;
+    }
+
 }

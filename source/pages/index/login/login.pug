@@ -1,0 +1,29 @@
+block content
+    section.auth-block
+        .auth-block__form
+            .auth-block__form_wrap
+                .auth-block__form_box
+                    h2.block-title АВТОРИЗУЙТЕСЬ
+                    .auth-block__form_box_inputs.inputs_margin
+                        .auth-block__form_box_inputs_log
+                            input(type="text" placeholder="Логин")
+                        .auth-block__form_box_inputs_key    
+                            input(type="text" placeholder="Пароль")
+                    .auth-block__robocheck
+                        .auth-block__robocheck_iman
+                            input(type="checkbox" id="imancheck")
+                            label(for="imancheck") Я человек
+                        .auth-block__robocheck_qws
+                            span Вы точно не робот?
+                            .auth-block__ans.auth-block__ans_margin
+                                .auth-block__ans-left
+                                    input(type="radio" name="radio" id="yescheck")
+                                    label(for="yescheck").robocheck_checked Да
+                                .auth-block__ans-right
+                                    input(type="radio" name="radio" id="nocheck")
+                                    label(for="nocheck") Не уверен
+                .auth-block__buttons.buttons
+                    button.button__item.button_basis
+                        a(href="#").button__link На главную
+                    button.button__item.button_basis
+                        a(href="#").button__link Войти

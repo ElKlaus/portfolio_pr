@@ -205,9 +205,6 @@ svg {
 
     .about__triangle {
         top: -22px;
-        svg {
-            height: 30px;
-        }
     }
 
     .about__triangle svg {
@@ -216,6 +213,9 @@ svg {
 
     .about__left_bg {
         width: 218px;
+    }
+    .user-description {
+        width: 95%;
     }
 
     .block_title-main {
