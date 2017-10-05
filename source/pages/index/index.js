@@ -9,3 +9,26 @@ import './index.scss';
 // console.log($);
 
 
+$(document).ready(function()
+{
+  portpro.init();
+});
+
+
+var portpro =  
+{
+   
+  init:function()
+  {
+    this.flipFunc();
+  },
+  flipFunc:function() {
+    let flipContainer = $('.flip-container'),
+      button = $('.welcome__button_link');
+
+
+    button.on( 'click' , function() {
+      flipContainer.toggleClass('hover');
+    });
+  },
+};

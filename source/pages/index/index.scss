@@ -2,24 +2,33 @@
 @import url('./login/login.scss');
 @import url('./flip.scss');
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:  url(./login_bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
 //Кнопка авторизации
-.auth-block {
+.welcome {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    width: 71.5%;
+    width: 71.5%;   
 }
 
-.auth-block__button_position {
+.welcome__button_position {
     margin-top: 24px;
 }
 
-.auth-block__button {
+.welcome__button {
     display: flex;
     justify-content: flex-end;
 }
 
-.auth-block__button_link {
+.welcome__button_link {
     a {
         font-family: 'robotoregular';
         color: #ffffff;
@@ -41,21 +50,21 @@
 }
 
 // Стили из формы авторизации
-.auth-block__form {
+.welcome__form {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.auth-block__form_wrap {
+.welcome__form_wrap {
     display: inline-block;
     border-radius: 5px;
     overflow: hidden;
-    max-width: 385px;
+    width: 100%;
 }
 
-.auth-block__form_box {
+.welcome__form_box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +108,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    backface-visibility: hidden;
 }
 
 .user__pic {
@@ -200,21 +208,38 @@
     background-color: rgba(8,176,157,0.7);
     border: none;
     padding: 0;
-    .button__link {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        transition: .25s ease;
-        font-family: 'robotomedium';
-        font-size: 16px;
-
-        &:hover {
-            background-color: rgba(57, 196, 188, 0.70);;
-        }
-    }
-
+    
     & + .button__item {
         border-left: 2px solid #74b9b7;
+    }
+
+}
+
+.welcome__buttons {
+    
+    .button__item:nth-child(1) {
+        flex-basis: 40%;
+    }
+
+    .button__item:nth-child(2) {
+        flex-basis: 34%;
+    }
+
+    .button__item:nth-child(3) {
+        flex-basis: 26%;
+    }
+}
+
+.button__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: .25s ease;
+    font-family: 'robotomedium';
+    font-size: 16px;
+
+    &:hover {
+        background-color: rgba(57, 196, 188, 0.70);;
     }
 }
 

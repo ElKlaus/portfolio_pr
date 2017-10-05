@@ -1,50 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image:  url(./login_bg.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-//Кнопка авторизации
-.auth-block {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.auth-block__button_position {
-    margin-top: 24px;
-}
-
-.auth-block__button {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.auth-block__button_link {
-    a {
-        font-family: 'robotoregular';
-        color: #ffffff;
-        text-decoration: none;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        padding: 14px 27px;
-        transition: .25s ease;
-        display: block;
-        &:hover {
-            background-color: #ffffff;
-            color: #00bfa5;
-        }
-        &:active {
-            background-color:rgba(255,252,252,0.75);
-            color: darken(#00bfa5, 10%);
-        }
-    }
-
-}
-
 //Форма авторизации
 .auth-block__form {
     flex-basis: 100%;
@@ -98,45 +51,47 @@ body {
     display: flex;
     flex-direction: column;
     width: 340px;
+}
 
-    input {
-        border-radius: 0 4px 4px 0;
-        border: none;
-        width: 93%;
-        outline: 0;
-        padding: 0 20px;
-        font-family: 'robotoregular';
-        font-size: 16px;
-        color: #373e42;
-    }
+.auth-block__form_box_inputs input {
+    border-radius: 0 4px 4px 0;
+    border: none;
+    width: 93%;
+    outline: 0;
+    padding: 0 20px;
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #373e42;
 }
 
 .auth-block__form_box_inputs_log {
     display: flex;
     margin-bottom: 20px;
-    &::before {
-        content: "";
-        background: url(../../../icons/login-man.png) no-repeat;
-        background-position: 50% 50%;
-        background-color: #f0efe9;
-        border-radius: 4px 0 0 4px;
-        width: 58px;
-        height: 45px;
-    }
+}
+
+.auth-block__form_box_inputs_log::before {
+    content: "";
+    background: url(../../../icons/login-man.png) no-repeat;
+    background-position: 50% 50%;
+    background-color: #f0efe9;
+    border-radius: 4px 0 0 4px;
+    width: 58px;
+    height: 45px;
 }
 
 .auth-block__form_box_inputs_key {
     display: flex;
     margin-bottom: 20px;
-    &::before {
-        content: "";
-        background: url(../../../icons/login-key.png) no-repeat;
-        background-position: 50% 50%;
-        background-color: #f0efe9;
-        border-radius: 4px 0 0 4px;
-        width: 58px;
-        height: 45px;
-    }
+}
+
+.auth-block__form_box_inputs_key::before {
+    content: "";
+    background: url(../../../icons/login-key.png) no-repeat;
+    background-position: 50% 50%;
+    background-color: #f0efe9;
+    border-radius: 4px 0 0 4px;
+    width: 58px;
+    height: 45px;
 }
 
 .auth-block__robocheck {
@@ -146,74 +101,80 @@ body {
 
 .auth-block__robocheck_iman {
     margin-bottom: 14px;
-
-    label {
-        font-family: 'robotoregular';
-        font-size: 16px;
-        color: #455a64;
-        display: inline-flex;
-    }
-    input[type="checkbox"] {
-        position: absolute;
-        left: -9999px;
-    }
-    input[type="checkbox"] + label:before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: #00bfa5;
-        margin-right: 10px;
-        border-radius: 2px;
-    }
-    input[type="checkbox"]:checked + label:before {
-        background: url('../../../icons/checked_bg.png') no-repeat;
-        background-color: #00bfa5;
-        background-position: 50%;
-    }
 }
 
-.auth-block__robocheck_qws {
-    span {
-        font-family: 'robotobold';
-        font-size: 16px;
-        color: #455a64;
-        display: block;
-        margin-bottom: 11px;
-    }
+.auth-block__robocheck_iman label {
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #455a64;
+    display: inline-flex;
+}
+
+.auth-block__robocheck_iman input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.auth-block__robocheck_iman input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #00bfa5;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.auth-block__robocheck_iman input[type="checkbox"]:checked + label:before {
+    background: url('../../../icons/checked_bg.png') no-repeat;
+    background-color: #00bfa5;
+    background-position: 50%;
+}
+
+
+.auth-block__robocheck_qws span{
+    font-family: 'robotobold';
+    font-size: 16px;
+    color: #455a64;
+    display: block;
+    margin-bottom: 11px;
 }
 
 .auth-block__ans {
     display: flex;
     justify-content: space-between;
 
-    label {
-        display: flex;
-        align-items: center;
-        font-family: 'robotoregular';
-        font-size: 16px;
-        color: #455a64;
-    }
-    input[type="radio"] {
-        position: absolute;
-        left: -9999px;
-    }
-    input[type="radio"] + label:before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: #ffffff;
-        border: 1px solid #cccdcd;
-        border-radius: 20px;
-        margin-right: 10px;
-    }
 
-    input[type="radio"]:checked + label:before {
-        background: url('../../../icons/checked_bg2.png') no-repeat;;
-        background-color: #ffffff;
-        background-position: 50%;
-    }
+}
+
+.auth-block__ans label {
+    display: flex;
+    align-items: center;
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #455a64;
+}
+
+.auth-block__ans input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.auth-block__ans input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid #cccdcd;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.auth-block__ans input[type="radio"]:checked + label:before {
+    background: url('../../../icons/checked_bg2.png') no-repeat;;
+    background-color: #ffffff;
+    background-position: 50%;
 }
 
 .auth-block__ans_margin {
@@ -226,43 +187,35 @@ body {
 }
 
 //Кнопки "На главную" и "Выход"
-.buttons {
-    display: flex; 
-}
 
 .button__item {
     background-color: rgba(8,176,157,0.7);
     border: none;
     padding: 0;
-    .button__link {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        padding: 14px 25px;
-        transition: .25s ease;
-        font-family: 'robotomedium';
-        font-size: 16px;
+}
 
-        &:hover {
-            background-color: rgba(57, 196, 188, 0.70);;
-        }
-    }
+.button__item  .button__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 25px;
+    transition: .25s ease;
+    font-family: 'robotomedium';
+    font-size: 16px;
+}
 
-    & + .button__item {
-        border-left: 2px solid #74b9b7;
-    }
+.button__item :hover {
+    background-color: rgba(57, 196, 188, 0.70);;
+}
+
+.button__item  + .button__item {
+    border-left: 2px solid #74b9b7;
 }
 
 .button_basis {
     flex-basis: 50%;
 }
 
-.footer {
-    font-family: 'robotolight';
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-}
 
 @media screen and (max-width: 760px) {
 

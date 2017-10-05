@@ -68,7 +68,7 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
-        new UglifyJSPlugin()
+        // new UglifyJSPlugin()
     ],
     module: {
         rules: [
