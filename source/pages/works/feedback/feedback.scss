@@ -21,6 +21,7 @@
     align-items: center;
     padding: 37px 0px 0px 0px;
     position: relative;
+    background: hsla(0,100%,99%,.85);
 }
 
 .feedback_blur {
@@ -31,6 +32,25 @@
     font-size: 35px;
     color: #455a64;
     margin-bottom: 31px;
+    font-family: 'bernier_regularregular';
+    position: relative;
+}
+
+.feedback__title::after, .feedback__title::before {
+    content: "";
+    background: #c4cbcd;
+    position: absolute;
+    width: 22px;
+    height: 5px;
+    top: 41%;
+}
+
+.feedback__title::before {
+    left: -40px;
+}
+
+.feedback__title::after {
+    right: -40px;
 }
 
 .feedback__inputs {
@@ -89,4 +109,58 @@
 
 .feedback__scroll-btn {
     margin-bottom: 216px;
+}
+
+@media screen and (max-width: 760px) {
+
+    .feedback__wrapper {
+        width: 344px;
+    }
+
+    .feedback__block {
+        padding: 21px 0 0;
+    }
+
+    .feedback__title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .feedback_margin {
+        margin-bottom: 99px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .feedback__block {
+        padding: 10px 0 0;
+    }
+
+    .feedback__wrapper {
+        width: 300px;
+    }
+
+    .feedback__title {
+        font-size: 21px;
+        margin-bottom: 22px;
+    }
+
+    .feedback__input {
+        font-size: 14px;
+        padding: 15px 19px;
+        margin-bottom: 18px;
+    }
+
+    .feedback__buttons .button__link {
+        font-size: 14px, 
+    }
+
+    .feedback__inputs {
+        width: 88%;
+    }
+
+    .feedback_margin {
+        margin-bottom: 48px;
+    }
 }

@@ -58,6 +58,7 @@ body {
 }
 
 .welcome__form_wrap {
+    transform: rotateY(0deg);
     display: inline-block;
     border-radius: 5px;
     overflow: hidden;
@@ -148,6 +149,7 @@ body {
     font-size: 16px;
     opacity: .8;
     color: #455a64;
+    backface-visibility: hidden;
 }
 
 .socials {
@@ -160,7 +162,8 @@ body {
 
 .socials__link {
     opacity: 0.5;
-    
+    backface-visibility: hidden;
+
     &:hover {
         opacity: 1;
     }
@@ -215,8 +218,7 @@ body {
 
 }
 
-.welcome__buttons {
-    
+.welcome__buttons {    
     .button__item:nth-child(1) {
         flex-basis: 40%;
     }

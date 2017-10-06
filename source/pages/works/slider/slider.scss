@@ -72,16 +72,31 @@
 
 @media screen and (max-width: 760px) {
 
+    .slider {
+        padding: 40px 0 0;
+    }
+
+    .hero__scroll-btn {
+        padding: 98px 0 49px;
+    }
+
     .slider__triangle {
-        top: -22px;
+        top: -70px;
     }
 
     .slider__triangle svg {
-        height: 30px;
+        height: 71px;
+    }
+
+    .slider__title_bgr {
+        top: -57px;
+        width: 100%;
+        height: 134px;
     }
 
     .slider__title_text {
         font-size: 49px;
+        letter-spacing: normal;
     }
 
     .slider__block {
@@ -98,8 +113,19 @@
 }
 
 @media screen and (max-width: 320px) {
-    
-        .slider__title_text {
-            font-size: 35px;
-        }
+    .slider {
+        padding: 25px 0 0;
+    }
+
+    .slider__triangle {
+        top: -29px;
+    }
+
+    .slider__triangle svg {
+        height: 30px;
+    }
+
+    .slider__title_text {
+        font-size: 35px;
+    }
 }
