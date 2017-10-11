@@ -174,12 +174,19 @@
     display: flex;
     position: relative;
     flex-basis: 50%;
+    justify-content: center;
 }
 
 .slider__left_img {
     background: url('./slide1-prev.png') no-repeat;
-    background-position: 50%;
-    background-size: cover;
+    background: none;
+    // background-position: 50%;
+    // background-size: cover;
+    // width: 100%;
+    // height: 100%;
+}
+
+.slider__left-prev, .slider__right-prev {
     width: 100%;
     height: 100%;
 }
@@ -196,10 +203,7 @@
 
 .slider__right_img {
     background: url('./slide2-prev.png') no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+    background: none;
 }
 
 .slider__right_arr {

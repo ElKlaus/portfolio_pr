@@ -1,6 +1,5 @@
 import 'normalize.css';
 import './index.scss';
-
 // import menuMacker from '../../components/menu/menu';
 // let menu = menuMacker(['Главная','Обо мне','Блог'], 'menu');
 // document.body.appendChild(menu);
@@ -23,7 +22,8 @@ var portpro =
     this.flipFunc();
   },
   flipFunc:function() {
-    let flipContainer = $('.flip-container'),
+    let 
+      flipContainer = $('.flip-container'),
       button = $('.welcome__button_link');
 
 
