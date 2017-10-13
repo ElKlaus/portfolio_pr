@@ -2,8 +2,26 @@ import 'normalize.css';
 import './blog.scss';
 import './../about/about';
 
-// import menuMacker from '../../components/menu/menu';
-// let menu = menuMacker(['Главная','Обо мне','Блог'], 'menu');
-// document.body.appendChild(menu);
 
-// console.log('in blog.js');
+
+$(document).ready(function()
+{
+  swipeMenu.init();
+});
+
+
+var swipeMenu = 
+{
+  init: function()
+  {
+    this.swipeToggle();
+  },
+  swipeToggle: function() 
+  {
+    console.log('test blog');
+  },
+};
+
+$('.swipe').bind('click', function() {
+  console.log('test swipe123');
+});

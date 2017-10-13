@@ -1,6 +1,7 @@
 @import url('../../fonts/fonts.css');
 @import url('../about/about.scss');
 @import url('../about/total-menu/total-menu.scss');
+@import url('./swipe/swipe.scss');
 
 .blog {
     position: relative;
@@ -67,7 +68,7 @@
 
 .blog_list-item:nth-child(2) {
 
-    .blog_list-link {        
+    .blog_list-link {
         font-family: 'robotobold';
         color: #00bfa5;
         border-right: 3px solid #00bfa5;

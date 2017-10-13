@@ -1,0 +1,64 @@
+.swipe {
+    position: absolute;
+    background-color: #00bfa5;
+    z-index: 5;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    transform: translateX(-80%);
+    transition: all .3s ease-in-out;
+}
+
+.swipe:hover {
+    transform: translateX(0);
+}
+
+.swipe__wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 235%;
+}
+
+.swipe__menu {
+
+}
+
+.swipe__list {
+    list-style-type: none;
+    padding: 0px 17px 0 0;
+}
+
+.swipe__item {
+    text-align: right;
+    opacity: .7;
+    font-family: 'robotobold';
+    font-size: 16px;
+}
+
+.swipe__item:nth-child(1) {
+    opacity: 1;
+}
+
+.swipe__item-margin {
+    margin-bottom: 39px;
+}
+
+.swipe__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.swipe__active {
+    opacity: 1;
+}
+
+.swipe__circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #00bfa5;
+    border-radius: 20px;
+    right: -6px;
+}
+
