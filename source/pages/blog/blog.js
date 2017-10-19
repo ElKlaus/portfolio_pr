@@ -22,6 +22,7 @@ var swipeMenu =
   },
 };
 
-$('.swipe').bind('click', function() {
+$('.swipe').on('click', function() {
   console.log('test swipe123');
 });
+

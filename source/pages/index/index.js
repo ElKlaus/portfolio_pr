@@ -24,10 +24,10 @@ var portpro =
   flipFunc:function() {
     let 
       flipContainer = $('.flip-container'),
-      button = $('.welcome__button_link');
+      buttons = $('.welcome__button_link, .button__return');
 
 
-    button.on( 'click' , function() {
+    buttons.on( 'click' , function() {
       flipContainer.toggleClass('hover');
     });
   },
