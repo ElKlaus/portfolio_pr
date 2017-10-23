@@ -26,3 +26,13 @@ $('.swipe').on('click', function() {
   console.log('test swipe123');
 });
 
+var startup = function () {
+  var el = document.getElementsByClassName('swipe');
+  // el.addEventListener('touchstart', handleStart, false);
+  // el.addEventListener('touchend', handleEnd, false);
+  // el.addEventListener('touchcancel', handleCancel, false);
+  // el.addEventListener('touchmove', handleMove, false);
+  console.log(el);
+};
+
+startup();
