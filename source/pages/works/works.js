@@ -4,9 +4,9 @@ import './../about/about';
 
 // let slider = require('./slider/slider');
 
-var someVar = 1111;
+// var someVar = 1111;
 
-console.log(someVar);
+// console.log(someVar);
 
 // var data1 = [{
 //   title: 'Project 1',
@@ -44,6 +44,4 @@ console.log(someVar);
 //   num: '5',
 // },
 // ];
-
-
 
