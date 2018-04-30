@@ -1,0 +1,15 @@
+.swipe
+    .swipe__wrap
+        .swipe__menu
+            ul.swipe__list
+                -
+                    var articles = {
+                        '1': 'Самое важное в SASS',
+                        '2': 'Приемы в вестке, без которых не обходится ни один сайт',
+                        '3': 'Самый необходимый набор Gulp плагинов',
+                        '4': 'Почему я выбрал Jade'
+                    }
+                each val in articles
+                    li.swipe__item.swipe__item-margin
+                        a(href="#").swipe__link #{val}
+        .swipe__circle

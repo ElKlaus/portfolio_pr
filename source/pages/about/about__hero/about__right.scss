@@ -1,0 +1,152 @@
+
+.about__right {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    background-color: #eeebdf;
+    padding: 7px 0px;
+}
+
+.about__right--content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 39px;
+}
+
+.about__right-title {
+    width: 48%;
+    text-align: center;
+    margin: 0 auto 15px;
+}
+
+.block-subtitle {
+
+}
+
+.about__right-description {
+    margin-bottom: 4px;
+}
+
+.skills-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list__item {
+}
+
+.skills-list__item-margin {
+    margin-bottom: 34px;
+}
+
+.skills-row {
+
+}
+
+.skills-row__title {
+    font-family: 'robotomedium';
+    font-size: 28px;
+    color: #455a64;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.skills-row__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.skills-row__itm {
+    margin: 0 37px 25px 0;
+}
+
+.skills-row__itm:last-child {
+    // margin-right: 0;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill__circle {
+    background-image: url(./skill_bg.png);
+    width: 110px;
+    height: 110px;
+}
+
+.skill__title {
+    font-family: 'robotomedium';
+    font-size: 13px;
+    color: #00bfa5;
+    position: absolute;
+    text-align: center;
+    max-width: 60%;
+}
+
+@media screen and (max-width: 760px) {
+    .about__right {
+        width: auto;
+        justify-content: center;
+    }
+
+    .about__right--content {
+        padding: 45px 0 0;
+        width: 63%;
+    }
+
+    .about__right-title {
+        margin: 0 auto 0px;
+    }
+
+    .about__right-title {
+        width: 57%;
+    }
+
+    .about__right-description {
+        font-size: 14px;
+    }
+
+    .skills-row__title {
+        font-size: 21px;
+    }
+
+    .skills-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-row__list {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .skills-row__itm {
+        margin: 0 0px 25px 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .about__right--content {
+        width: 95%;
+    }
+
+    .about__right-title {
+        width: 86%;
+    }
+
+    .skills-row__itm {
+        margin: 0 0 31px 2px;
+    }
+
+    .skills-list__item-margin {
+        margin-bottom: -5px;
+    }
+}

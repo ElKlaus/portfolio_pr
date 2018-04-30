@@ -1,0 +1,292 @@
+//Форма авторизации
+.auth-block__form {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-block__form_wrap {
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 385px;
+}
+
+.auth-block__form_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 19px;
+    background: rgba(255,252,252,0.75);
+}
+
+.block-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0 0 33px 0;
+    font-family: 'bernier_regularregular';
+    color: #455a64;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        background: #c4cbcd;
+        margin-right: 20px; 
+        width: 22px;
+        height: 5px;
+    }
+     
+    &::after {
+        content: "";
+        background: #c4cbcd;
+        margin-left: 20px;
+        width: 22px;
+        height: 5px;
+    }
+}
+
+.auth-block__form_box_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+.auth-block__form_box_inputs input {
+    border-radius: 0 4px 4px 0;
+    border: none;
+    width: 93%;
+    outline: 0;
+    padding: 0 20px;
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #373e42;
+}
+
+.auth-block__form_box_inputs_log {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.auth-block__form_box_inputs_log::before {
+    content: "";
+    background: url(../../../icons/login-man.png) no-repeat;
+    background-position: 50% 50%;
+    background-color: #f0efe9;
+    border-radius: 4px 0 0 4px;
+    width: 58px;
+    height: 45px;
+}
+
+.auth-block__form_box_inputs_key {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.auth-block__form_box_inputs_key::before {
+    content: "";
+    background: url(../../../icons/login-key.png) no-repeat;
+    background-position: 50% 50%;
+    background-color: #f0efe9;
+    border-radius: 4px 0 0 4px;
+    width: 58px;
+    height: 45px;
+}
+
+.auth-block__robocheck {
+    text-align: center;
+    width: 100%;
+} 
+
+.auth-block__robocheck_iman {
+    margin-bottom: 14px;
+}
+
+.auth-block__robocheck_iman label {
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #455a64;
+    display: inline-flex;
+}
+
+.auth-block__robocheck_iman input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.auth-block__robocheck_iman input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #00bfa5;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.auth-block__robocheck_iman input[type="checkbox"]:checked + label:before {
+    background: url('../../../icons/checked_bg.png') no-repeat;
+    background-color: #00bfa5;
+    background-position: 50%;
+}
+
+
+.auth-block__robocheck_qws span{
+    font-family: 'robotobold';
+    font-size: 16px;
+    color: #455a64;
+    display: block;
+    margin-bottom: 11px;
+}
+
+.auth-block__ans {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.auth-block__ans label {
+    display: flex;
+    align-items: center;
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #455a64;
+}
+
+.auth-block__ans input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.auth-block__ans input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid #cccdcd;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.auth-block__ans input[type="radio"]:checked + label:before {
+    background: url('../../../icons/checked_bg2.png') no-repeat;;
+    background-color: #ffffff;
+    background-position: 50%;
+}
+
+.auth-block__ans_margin {
+    max-width: 58%;
+    margin: 0 auto;
+}
+
+.robocheck_checked {
+    color: #00bfa5;
+}
+
+//Кнопки "На главную" и "Выход"
+
+.button__item {
+    background-color: rgba(8,176,157,0.7);
+    border: none;
+    padding: 0;
+}
+
+.button__item  .button__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 25px;
+    transition: .25s ease;
+    font-family: 'robotomedium';
+    font-size: 16px;
+}
+
+.button__item :hover {
+    background-color: rgba(57, 196, 188, 0.70);;
+}
+
+.button__item  + .button__item {
+    border-left: 2px solid #74b9b7;
+}
+
+.button_basis {
+    flex-basis: 50%;
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .auth-block__form_box {
+        padding: 33px 19px 39px;
+    }
+
+    .block-title {
+        font-size: 30px;
+    }
+
+    .auth-block__form_box_inputs {
+        width: 310px;
+    }
+
+    .inputs_margin {
+        margin-bottom: 5px;
+    }
+
+    .auth-block__robocheck_qws span {
+        margin-bottom: 8px;
+    }
+
+    .auth-block__form_box_inputs input {
+        font-size: 14px;
+    }
+
+    .auth-block__ans_margin {
+        max-width: 64%;
+    }
+
+    .button__link-padding {
+        padding: 14px 25px;
+    }
+
+    .user__name {
+        font-size: 26px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .auth-block__form_box_inputs {
+        width: 260px;
+    }
+
+    .auth-block__button_link {
+        font-size: 14px;
+        a {
+            padding: 11px 19px;
+        }
+    }
+
+    .auth-block__button_position {
+        margin-top: 10px;
+    }
+    
+    .auth-block {
+        align-items: center;
+    }
+
+    .user__name {
+        font-size: 21px;
+    }
+
+    .button__item .button__link {
+        font-size: 14px;
+    }
+}

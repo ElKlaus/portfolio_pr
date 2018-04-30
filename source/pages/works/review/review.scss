@@ -1,0 +1,244 @@
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    background-image: url(./review_bg.jpg);
+    background-size: cover;
+    padding: 55px 24px 0 24px;
+}
+
+.review__title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.review__title_bgr {
+    background: url(./../../../icons/about_header.svg) no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    position: absolute;
+    top: -33px;
+    opacity: .1;
+    width: 100%;
+    height: 180px;
+}
+
+.review__title_block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'bernier_regularregular';
+    font-size: 63px;
+    text-align: center;
+    line-height: 1.1;
+    color: #373e42;
+    width: 80%;
+}
+
+.review__title_block::after, .review__title_block::before {
+    content: "";
+    background: #c4cbcd;
+    width: 22px;
+    height: 5px;
+    position: absolute;
+    top: 26%;
+}
+
+.review__title_block::after {
+    right: 0;
+}
+
+.review__title-margin {
+    margin-bottom: 107px;
+}
+
+.review__text {
+    color: #455a64;
+    line-height: 1.7em;
+}
+
+.review__block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.review__content {
+    position: relative;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review__content::before {
+    background-image: url(./review_bg.png);
+    content: "";
+    position: absolute;
+    height: 29px;
+    width: 33px;
+    top: -52px;
+}
+
+.review__content + .review__content {
+    margin-left: 34px;
+}
+
+.review__text {
+    margin-bottom: 17px;
+}
+
+.review__autor {
+    display: flex;
+    align-items: center;
+}
+
+.review__autor-pic {
+    width: 78px;
+    height:78px;
+    border-radius: 50%;
+}
+
+.review__pic-1 {
+    background-image: url(./review1_bg.jpg);
+    background-position: center;
+}
+
+.review__pic-2 {
+    background-image: url(./review2_bg.jpg);
+}
+
+.review__autor_info {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #20b5a1;
+}
+
+.review__info_margin {
+    margin-left: 21px;
+}
+
+.review__autor-name {
+    font-family: 'robotobold';
+    line-height: 1.7;
+}
+
+.review__autor-status {
+    font-family: 'robotoregular';
+}
+
+@media screen and (max-width: 760px) {
+    .review {
+        padding: 40px 21px 0;
+        height: 161vh;
+    }
+
+    .review__title_bgr {
+        top: -62px;
+        width: 109%;
+        height: 180px;
+        left: -12px;
+    }
+
+    .review__title_block {
+        font-size: 49px;
+        width: 100%;
+    }
+
+    .review__title_block:after, .review__title_block:before {
+        top: 48%;
+    }
+    
+    .review__title_block::before {
+        left: -40px;
+    }
+
+    .review__title_block::after {
+        right: -40px;
+    }
+
+    .review__title-margin {
+        margin-bottom: 82px;
+    }
+
+    .text-content {
+        font-size: 14px;
+    }
+
+    .review__content:before {
+        top: -43px;
+    }
+
+    .review__content+.review__content {
+        margin-left: 25px;
+    }
+
+    .review__autor_info {
+        font-size: 14px;
+    }
+
+    .review__autor-name {
+        line-height: normal;
+    }
+
+    .review__autor-status {
+        line-height: 2;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .review {
+        padding: 29px 9px 0;
+        height: 186vh;
+    }
+
+    .review__block {
+        flex-wrap: wrap;
+    }
+
+    .review__title_bgr {
+        top: -7px;
+        width: 100%;
+        height: 88px;
+        left: 0px;
+    }
+
+    .review__title_block {
+        font-size: 35px;
+        width: 60%;
+        line-height: 1.2;
+    }
+
+    .review__title-margin {
+        margin-bottom: 64px;
+    }
+
+    .review__content:before {
+        left: 44%;
+    }
+    
+    .review__content:nth-child(1) {
+        margin-bottom: 72px;
+    }
+
+    .review__content+.review__content {
+        margin-left: 0;
+    }
+
+    .review__text {
+        margin-bottom: 10px;
+    }
+
+    .review__autor-pic {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+}

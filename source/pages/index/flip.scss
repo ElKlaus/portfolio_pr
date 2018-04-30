@@ -1,0 +1,27 @@
+.flip-container {
+    perspective: 1000;
+    width: 380px;
+}
+
+ 
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.welcome__form_wrap, .auth-block__form_wrap {
+    backface-visibility: hidden;
+}
+
+.auth-block__form_wrap {
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -3;
+}

@@ -1,0 +1,57 @@
+extends ../base
+
+block head
+    title works page
+block content
+    include ./../about/total-menu/total-menu
+
+    include ./../about/hero/hero
+
+    include ./slider/slider
+
+    section.section.review
+        .review__title.review__title-margin
+            .review__title_bgr
+            .review__title_block Что обо мне говорят
+        .review__block
+            .review__content
+                .review__text.text-content
+                    | Этот парень проходил обучение 
+                    |веб-разработке не где-то, а в LoftSchool! 
+                    |2 месяца только самых тяжелых испытаний и
+                    | бессонных ночей!
+                .review__autor
+                    .review__autor-pic.review__pic-1
+                    .review__autor_info.review__info_margin
+                        .review__autor-name Ковальчук Дмитрий
+                        .review__autor-status основатель Loftschool
+            .review__content
+                .review__text.text-content
+                    | Этот код выдержит любые испытания.
+                    | Только пожалуйста, не загружаейте сайт
+                    |  на слишком старых браузерах!
+                .review__autor
+                    .review__autor-pic.review__pic-2
+                    .review__autor_info.review__info_margin
+                        .review__autor-name Сабанцев Владимир
+                        .review__autor-status преподаватель
+
+        .feedback
+            .feedback__wrapper.feedback_margin
+                .feedback__block
+                    .feedback_blur
+                    .feedback__title Связаться со мной
+                    .feedback__inputs
+                        input(type="text" placeholder="Имя").feedback__input.feedback__input-name
+                        input(type="text" placeholder="Email").feedback__input.feedback__input-email
+                        input(type="text" placeholder="Ваше сообщение").feedback__input.feedback__input-mess
+                .feedback__buttons.buttons
+                    button.button__item.button_basis
+                        a(href="#").button__link Отправить
+                    button.button__item.button_basis
+                        a(href="#").button__link Очистить
+
+        .feedback__scroll-btn
+            button(type="button").arrow-down.arrow-up
+
+    include ./../about/footer/footer

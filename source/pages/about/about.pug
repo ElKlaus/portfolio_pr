@@ -1,0 +1,120 @@
+extends ../base
+
+block head
+    title about page
+block content
+    include ./../about/total-menu/total-menu
+    include ./hero/hero
+            
+    section.section.about
+        .triangle.about__triangle
+            svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_left
+                polygon(fill="#efeee9" points="0,100 -7,0 100,100").poligon_left
+            svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_right
+                polygon(points="0,100 100,9   100,100").poligon_right
+        .about__left
+            .about__left--content
+                .about__left--title
+                    .about__left_bg
+                    .block_title.block_title-main Обо мне
+                .user-description
+                    .user-description__image.description__image-margin
+                        .user-description__avatar
+                    .user-description--title
+                        .block_title.block-subtitle Кто я
+                    .user-description--text.text-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vel? Asperiores voluptatibus veritatis consequuntur assumenda maxime placeat magni corrupti, tenetur corporis quae iure quos consequatur perspiciatis nesciunt architecto quasi deleniti.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, Lorem  Quam illo impedit adipisci!c vel? Asperiores voluptatibus veritatis consequuntur assumenda maxime placeat magni corrupti, tenetur corporis quae iure quos consequatur perspiciatis nesciunt architecto quasi deleniti.
+        .about__right
+            .about__right--content
+                .about__right-title
+                    .block-subtitle.block_title Чем я могу быть вам полезен
+                .about__right-description.text-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vel? Asperiores voluptatibus veritatis consequuntur assumenda maxime placeat magni corrupti, tenetur corporis quae iure quos consequatur perspiciatis nesciunt architecto quasi deleniti.                        
+                
+                ul.skills-list
+                        -
+                            var skills = [
+                                ['frontend', 'backend', 'workflow'],
+                                ['HTML5', 'CSS3', 'JavaScript & jQuery'],
+                                ['PHP', 'MySQL','Node.js & npm', 'Mongo.db'],
+                                ['Git', 'Gulp', 'Bower', 'Webpack']
+                            ]
+                        li.skills-list__item.skills-list__item-margin
+                            .skills-row
+                                .skills-row__title frontend
+                                ul.skills-row__list
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title HTML5
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title CSS3
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title JavaScript & jQuery
+                        li.skills-list__item.skills-list__item-margin
+                            .skills-row
+                                .skills-row__title backend
+                                ul.skills-row__list
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title PHP
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title MySQL
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title Node.js & npm
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title Mongo.db
+                        li.skills-list__item.skills-list__item-margin
+                            .skills-row
+                                .skills-row__title workflow
+                                ul.skills-row__list
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title Git
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title Gulp
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title Bower
+                                        li.skills-row__itm
+                                            .skill
+                                                .skill__circle
+                                                .skill__title Webpack
+    section.section.map
+        .google-map
+            //- a(href="https://yandex.ru/maps/?um=constructor%3Ae9ef11af93fe1e83ebeafc41d606ac9496966947e9cbc7269aac1d01778716af&amp;source=constructorStatic", target="_blank")
+            //-     img(src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ae9ef11af93fe1e83ebeafc41d606ac9496966947e9cbc7269aac1d01778716af&amp;width=600&amp;height=450&amp;lang=ru_RU", alt="", style="border: 0;")
+        .map__data
+            .contacts
+                .contacts__title
+                    .block-subtitle.block_title Контакты
+                ul.contats__list
+                    -
+                        var contacts = [
+                            ['skype', 'skype_kdn'],
+                            ['mail', 'klaus15rus@mail.ru'],
+                            ['phone', '+7 899 155 15 00'],
+                            ['address', 'Beslan, Kirova 34']
+                        ]
+                    each item in contacts    
+                        li.contacts__item.contact-row
+                            div(class = `contact-row_icon contact-row_icon_${item[0]}`)
+                            .contact-row_content #{item[1]}
+    
+    include ./footer/footer

@@ -1,0 +1,21 @@
+@import url('../../fonts/fonts.css');
+@import url('../about/total-menu/total-menu.scss');
+
+body {
+    background-image:  url(./hero/hero-sect_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+@import url('./hero/hero.scss');
+
+@import url('./about__hero/about__left.scss');
+@import url('./about__hero/about__right.scss');
+
+@import url('./map/map.scss');
+
+@import url('./footer/footer.scss');

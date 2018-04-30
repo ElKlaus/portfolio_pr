@@ -1,0 +1,28 @@
+section.section.slider
+    .triangle.slider__triangle
+        svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_left
+            polygon(fill="#faf8f0" points="0,100 -7,0 100,100")
+        svg(viewBox = "0 0 100 100" preserveAspectRatio = "none").triangle_right
+            polygon(fill="#faf8f0" points="0,100 100,9   100,100")
+    .slider__title.slider__title_margin
+        .slider__title_bgr
+        .slider__title_text.block_title Мои работы
+    .slider__block
+        .slider__info
+            .slider__info_wrap
+                .slider__info_title Сайт школы онлайн Образования
+                .slider__info_tools HTML , CSS, JAVASCRIPT
+                button.slider__info_button
+                    a Посмотреть сайт
+        .slider__display
+            .slider__display_img
+                img(src="./images/slide1.png", alt="").slider__item
+        .slider__btns
+            .slider__btns_left
+                .slider__left_img
+                    img(src="./images/slide1-prev.png", alt="").slider__left-prev
+                .slider__left_arr
+            .slider__btns_right
+                .slider__right_img
+                    img(src="./images/slide2-prev.png", alt="").slider__right-prev
+                .slider__right_arr
