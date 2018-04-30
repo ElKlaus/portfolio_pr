@@ -2,12 +2,6 @@ import 'normalize.css';
 import './works.scss';
 import './../about/about';
 
-// let slider = require('./slider/slider');
-
-// var someVar = 1111;
-
-// console.log(someVar);
-
 // var data1 = [{
 //   title: 'Project 1',
 //   image: './images/slide1.png',
